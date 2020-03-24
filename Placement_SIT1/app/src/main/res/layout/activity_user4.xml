@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".user4">
+
+    <com.flaviofaria.kenburnsview.KenBurnsView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/back" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="#9E000000"
+        android:padding="25dp"
+        >
+
+        <TextView
+            android:id="@+id/userlogintxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="User LOGIN"
+            android:textColor="#fff"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/userlogintxt"
+        android:ems="10"
+        android:textColorHint="@color/lightwhite"
+        android:hint="Enter E-mail address with USN"
+        android:inputType="textPersonName"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/userloginbtn"
+        android:layout_width="match_parent"
+        android:layout_marginTop="40dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:background="@drawable/designbtnshome"
+        android:textColor="#fff"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText"
+        android:text="LOGIN" />
+
+    <Button
+        android:id="@+id/register"
+        style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="19dp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:layout_below="@+id/userloginbtn"
+        android:text="Not Registered?" />
+
+</RelativeLayout>
+</ScrollView>
+</RelativeLayout>

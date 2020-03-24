@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.sark.android.placement_sit1.MainActivity">
+
+    <item
+        android:id="@+id/deve"
+        android:orderInCategory="100"
+        android:title="Developers"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/abouthome"
+        android:orderInCategory="100"
+        android:title="About"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/exithome"
+        android:orderInCategory="100"
+        android:title="Exit"
+        app:showAsAction="never" />
+</menu>

@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/undertheinfluence"
+    >
+
+    <EditText
+        android:id="@+id/dt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/textView3"
+        android:ems="10"
+        android:hint="Date"
+        android:inputType="textPersonName"
+        android:textColor="@color/Golden"
+        android:textColorHint="#fff"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="146dp" />
+
+    <EditText
+        android:id="@+id/regislinketupdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="151dp"
+        android:ems="10"
+        android:textColor="#ffffff"
+        android:hint="Enter Registration link"
+        android:textColorHint="@color/Golden" />
+    <EditText
+        android:id="@+id/tm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/dt"
+        android:ems="10"
+        android:hint="Enter Company Name"
+        android:inputType="textPersonName"
+        android:textColor="@color/Golden"
+        android:textColorHint="#ffffff"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="262dp" />
+    <Button
+        android:id="@+id/dta"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:background="@color/btncolor"
+        android:textColorHint="#fff"
+        android:hint="SELECT DATE"
+        tools:layout_editor_absoluteX="278dp"
+        tools:layout_editor_absoluteY="139dp"
+        android:layout_alignBottom="@+id/dt"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="15dp"
+        android:background="@color/btncolor"
+        android:text="Update"
+        android:textColorHint="#fff"
+        tools:layout_editor_absoluteX="137dp"
+        tools:layout_editor_absoluteY="383dp" />
+
+    <EditText
+        android:id="@+id/packageedittxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tm"
+        android:ems="10"
+        android:hint="Enter Company Package"
+        android:inputType="textPersonName"
+        android:textColor="#ffffff"
+        android:textColorHint="@color/Golden" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="171dp"
+        android:text="Select Branches:"
+        android:textColor="#ffffff"
+        android:textSize="17dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="208dp"
+        android:onClick="checkboxes"
+        android:text="CSE"
+        android:textColor="@color/Golden"
+        android:textSize="25dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/checkBox"
+        android:onClick="checkboxes"
+        android:text="ISE"
+        android:textColor="@color/Golden"
+        android:textSize="25dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/checkBox2"
+        android:layout_centerHorizontal="true"
+        android:onClick="checkboxes"
+        android:text="MECH"
+        android:textColor="@color/Golden"
+        android:textSize="22dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tmbtn"
+        android:layout_alignTop="@+id/checkBox"
+        android:onClick="checkboxes"
+        android:text="TELE"
+        android:textColor="@color/Golden"
+        android:textSize="23dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/checkBox5"
+        android:layout_centerVertical="true"
+        android:onClick="checkboxes"
+        android:text="CHEM"
+        android:textColor="@color/Golden"
+        android:textSize="22dp" />
+    <CheckBox
+        android:id="@+id/checkBox7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/checkBox2"
+        android:onClick="checkboxes"
+        android:text="EEE"
+        android:textColor="@color/Golden"
+        android:textSize="25dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/checkBox3"
+        android:layout_below="@+id/checkBox4"
+        android:onClick="checkboxes"
+        android:text="IEM"
+        android:textColor="@color/Golden"
+        android:textSize="25dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/checkBox5"
+        android:layout_below="@+id/checkBox2"
+        android:onClick="checkboxes"
+        android:text="EI"
+        android:textColor="@color/Golden"
+        android:textSize="25dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/dt"
+        android:layout_alignTop="@+id/checkBox"
+        android:onClick="checkboxes"
+        android:text="ECE"
+        android:textColor="@color/Golden"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/deaddate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="120dp"
+        android:text="Deadline Date:"
+        android:textColor="#ffffff"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/deadtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="71dp"
+        android:text="Deadline Time:"
+        android:textColor="#ffffff"
+        android:textSize="20dp" />
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="22dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:visibility="invisible"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:text=" " />
+
+    <EditText
+        android:id="@+id/deaddateet"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/deaddate"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="@color/Golden" />
+
+    <Button
+        android:id="@+id/dtbtn"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/deaddate"
+        android:layout_alignParentEnd="true"
+        android:background="@color/btncolor"
+        android:hint="SELECT DATE"
+        android:textColorHint="#fff"
+        tools:layout_editor_absoluteX="278dp"
+        tools:layout_editor_absoluteY="139dp" />
+
+    <Button
+        android:id="@+id/tmbtn"
+        android:layout_width="114dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/deadtime"
+        android:layout_alignParentEnd="true"
+        android:background="@color/btncolor"
+        android:hint="SELECT TIME"
+        android:textColorHint="#fff" />
+    <EditText
+        android:id="@+id/deadtimeet"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/Golden"
+        android:layout_alignBaseline="@+id/deadtime"
+        android:layout_alignStart="@+id/deaddateet"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+</RelativeLayout>

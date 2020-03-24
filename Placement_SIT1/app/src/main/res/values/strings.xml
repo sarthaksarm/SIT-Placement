@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">SIT Placement</string>
+    <string name="developer">Developers</string>
+    <string name="about">
+
+        \n\n\n</string>
+    <string name="contentmem1">
+        \n<b>AKASH KUMAR SRIVASTAVA</b>\n(Team SARK)\n\n
+
+    </string>
+    <string name="contentmem2">
+        \n<b>SARTHAK MISHRA</b>\n(Team SARK)\n\n
+
+    </string>
+    <string name="contentdev"><u>Developers</u> :
+    </string>
+    The purpose and main aim of developing PlacementSIT app may be the missing piece of many
+    unfinished projects, to provide a hand-on
+    access with all the company details namely company name, date of visit, its package, eligible
+    branch students,
+    deadline date, time for registration and link to register upon so that none of student could
+    miss any company due to lack of information.
+    \nAll the users of the app would be benefited by having an exact handout solution to escape from
+    those queues, which ask the same repeated question from
+    placement department of our college every time, \"Which is the upcoming company and its
+    details?\", in form of PlacementSIT app. It, also,
+    becomes problematic to keep track of each company among a list of companies, every day from
+    mails, so having all company details at one place would
+    make this job simpler and easier.
+    It has also been ensured that none of its user other than a SIT student, can access any
+    information regarding companies registered in the app.
+</resources>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bghome"
+    tools:context=".user123"
+    >
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:padding="10dp"
+    android:background="@color/lightgrey"
+    tools:context=".user123">
+
+    <EditText
+        android:id="@+id/user123nameet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:textColor="#000"
+        android:ems="10"
+        android:layout_marginTop="90dp"
+        android:hint="Enter USN(University Seat Number)"
+        android:inputType="textPersonName"
+         />
+
+    <Button
+        android:id="@+id/sbmtbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/designbtns"
+        android:text="LOGIN"
+        android:layout_below="@+id/user123nameet"
+        android:layout_marginTop="50dp"
+        android:textStyle="bold" />
+</RelativeLayout>
+</ScrollView>

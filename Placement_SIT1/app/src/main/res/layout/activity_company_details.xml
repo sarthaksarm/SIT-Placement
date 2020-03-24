@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/lightgrey"
+    tools:context=".Company_details"
+    >
+
+<RelativeLayout
+android:layout_width="match_parent"
+android:layout_height="820dp"
+>
+
+    <TextView
+        android:id="@+id/dt"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/textView3"
+        android:ems="10"
+        android:textSize="22dp"
+        android:hint="Company Visit"
+        android:textColor="#000"
+        android:textColorHint="@color/Golden" />
+
+    <EditText
+        android:id="@+id/tm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/packagetxt"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="-128dp"
+        android:ems="10"
+        android:hint="Enter Company Name"
+        android:inputType="textPersonName"
+        android:textColor="#000"
+        android:textColorHint="@color/Golden"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="262dp" />
+
+    <EditText
+        android:id="@+id/regislinket"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/timeedit"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Enter Registration link"
+        android:textColor="#000"
+        android:textColorHint="@color/Golden" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/regislinket"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/designbtns"
+        android:text="SAVE"
+        android:textColor="#fff"/>
+
+    <Button
+        android:id="@+id/dtdead"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/dtdeadline"
+        android:background="@color/btncolor"
+        android:hint="SELECT DATE"
+        android:textColorHint="#000" />
+
+<TextView
+    android:id="@+id/textView3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="22dp"
+    android:text="" />
+
+    <TextView
+        android:id="@+id/keyiddate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/dt2"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/dt"
+        android:layout_alignParentEnd="true"
+        android:background="@color/btncolor"
+        android:hint="SELECT DATE"
+        android:textColorHint="#000" />
+    <EditText
+        android:id="@+id/packagetxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="140dp"
+        android:ems="10"
+        android:hint="Enter Company Package"
+        android:inputType="textPersonName"
+        android:textColor="#000"
+        android:textColorHint="@color/Golden" />
+
+    <TextView
+        android:id="@+id/branchtxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/dt" />
+
+
+    <TextView
+        android:id="@+id/branch"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:layout_below="@+id/packagetxt"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentStart="true"
+        android:text="Select Branches:"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:textSize="17dp" />
+    <CheckBox
+        android:id="@+id/checkBox25"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/branch"
+        android:onClick="checkboxes"
+        android:text="MCA"
+        android:textColor="@color/Golden"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/UGTXTVIEW"
+        android:layout_width="119dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/checkBox25"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="UG COURSES :"
+        android:textSize="17dp"
+        android:textStyle="italic|bold" />
+
+    <Button
+        android:id="@+id/ugselectall"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/UGTXTVIEW"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/designbtns"
+        android:gravity="center"
+        android:text="Select all" />
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/UGTXTVIEW"
+        android:onClick="checkboxes"
+        android:text="CSE"
+        android:textColor="@color/Golden"
+        android:textSize="25dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/checkBox"
+        android:layout_marginTop="5dp"
+        android:onClick="checkboxes"
+        android:text="ISE"
+        android:textColor="@color/Golden"
+        android:textSize="25dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/checkBox2"
+        android:onClick="checkboxes"
+        android:text="ECE"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/Golden"
+        android:textSize="25dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/checkBox3"
+        android:layout_marginTop="5dp"
+        android:onClick="checkboxes"
+        android:text="MECH"
+        android:textColor="@color/Golden"
+        android:textSize="22dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/checkBox4"
+        android:onClick="checkboxes"
+        android:layout_marginTop="5dp"
+        android:text="TELE"
+        android:textColor="@color/Golden"
+        android:textSize="23dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp"
+        android:onClick="checkboxes"
+        android:layout_below="@+id/checkBox5"
+        android:text="CHEM"
+        android:textColor="@color/Golden"
+        android:textSize="22dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/checkBox6"
+        android:onClick="checkboxes"
+        android:text="EEE"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/Golden"
+        android:textSize="25dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:onClick="checkboxes"
+        android:layout_below="@+id/checkBox7"
+        android:layout_marginTop="5dp"
+        android:text="IEM"
+        android:textColor="@color/Golden"
+        android:textSize="25dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/checkBox8"
+        android:layout_marginTop="5dp"
+        android:onClick="checkboxes"
+        android:text="EI"
+        android:textColor="@color/Golden"
+        android:textSize="25dp" />
+    <CheckBox
+        android:id="@+id/checkBox10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/checkBox9"
+        android:onClick="checkboxes"
+        android:text="Bio-Tech"
+        android:textColor="@color/Golden"
+        android:textSize="25dp" />
+    <CheckBox
+        android:id="@+id/checkBox11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/checkBox10"
+        android:onClick="checkboxes"
+        android:layout_marginTop="5dp"
+        android:text="CV"
+        android:textColor="@color/Golden"
+        android:textSize="25dp" />
+
+
+    <TextView
+        android:id="@+id/pgtxtview"
+        android:layout_marginTop="15dp"
+        android:textSize="17dp"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:layout_below="@+id/checkBox11"
+        android:textStyle="italic|bold"
+        android:text="PG COURSES :" />
+
+    <Button
+        android:id="@+id/pgselectall"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/pgtxtview"
+        android:background="@drawable/designbtns"
+        android:gravity="center"
+        android:text="Select all" />
+    <CheckBox
+        android:id="@+id/checkBox12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/pgtxtview"
+        android:onClick="checkboxes"
+        android:layout_marginTop="5dp"
+        android:text="MTECH CNE"
+        android:textColor="@color/Golden"
+        android:textSize="25dp"  />
+
+    <CheckBox
+        android:id="@+id/checkBox13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/checkBox12"
+        android:onClick="checkboxes"
+        android:text="MTECH CF"
+        android:textColor="@color/Golden"
+        android:textSize="25dp"  />
+
+    <CheckBox
+        android:id="@+id/checkBox14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBox13"
+        android:onClick="checkboxes"
+        android:layout_marginTop="5dp"
+        android:text="MTECH VLSI and ES"
+        android:textColor="@color/Golden"
+        android:textSize="21dp"  />
+    <CheckBox
+        android:id="@+id/checkBox15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBox14"
+        android:layout_marginTop="5dp"
+        android:onClick="checkboxes"
+        android:text="MTECH CVS"
+        android:textColor="@color/Golden"
+        android:textSize="21dp"  />
+    <CheckBox
+        android:id="@+id/checkBox16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBox15"
+        android:onClick="checkboxes"
+        android:layout_marginTop="5dp"
+        android:text="MTECH CIM"
+        android:textColor="@color/Golden"
+        android:textSize="21dp"  />
+    <CheckBox
+        android:id="@+id/checkBox17"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBox16"
+        android:onClick="checkboxes"
+        android:layout_marginTop="5dp"
+        android:text="MTECH CS"
+        android:textColor="@color/Golden"
+        android:textSize="21dp"  />
+    <CheckBox
+        android:id="@+id/checkBox18"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBox17"
+        android:layout_marginTop="5dp"
+        android:onClick="checkboxes"
+        android:text="MTECH DC"
+        android:textColor="@color/Golden"
+        android:textSize="21dp"  />
+    <CheckBox
+        android:id="@+id/checkBox19"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBox18"
+        android:layout_marginTop="5dp"
+        android:onClick="checkboxes"
+        android:text="MTECH Manufacturing"
+        android:textColor="@color/Golden"
+        android:textSize="21dp"  />
+    <CheckBox
+        android:id="@+id/checkBox20"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBox19"
+        android:onClick="checkboxes"
+        android:text="MTECH Nanotech"
+        android:textColor="@color/Golden"
+        android:textSize="21dp"  />
+    <CheckBox
+        android:id="@+id/checkBox21"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBox20"
+        android:onClick="checkboxes"
+        android:text="MTECH PE"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/Golden"
+        android:textSize="21dp"  />
+    <CheckBox
+        android:id="@+id/checkBox22"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBox21"
+        android:onClick="checkboxes"
+        android:text="MTECH SP"
+        android:textColor="@color/Golden"
+        android:textSize="21dp"  />
+    <CheckBox
+        android:id="@+id/checkBox23"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBox22"
+        android:onClick="checkboxes"
+        android:layout_marginTop="5dp"
+        android:text="MTECH TE"
+        android:textColor="@color/Golden"
+        android:textSize="21dp"  />
+    <TextView
+        android:id="@+id/dtdeadline"
+        android:layout_width="167dp"
+        android:layout_height="58dp"
+        android:textSize="22dp"
+        android:layout_below="@+id/checkBox23"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Registration Deadline Date"
+        android:textColor="#000"
+        android:textColorHint="@color/Golden" />
+
+
+    <Button
+        android:id="@+id/timebtn"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/regislinket"
+        android:layout_alignParentEnd="true"
+        android:background="@color/btncolor"
+        android:hint="SELECT TIME"
+        android:textColorHint="#000" />
+
+    <TextView
+        android:id="@+id/timeedit"
+        android:layout_width="168dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@+id/dtdeadline"
+        android:layout_marginTop="20dp"
+        android:textSize="22dp"
+        android:hint="Registration Deadline Time"
+        android:textColor="#000"
+        android:textColorHint="@color/Golden" />
+
+
+</RelativeLayout>
+</ScrollView>

@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.sark.android.placement_sit1.Retrieveuser">
+    <item
+        android:id="@+id/developer"
+        android:orderInCategory="100"
+        android:title="@string/developer"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/about2"
+        android:orderInCategory="100"
+        android:title="About"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/exit"
+        android:orderInCategory="100"
+        android:title="Sign-out"
+        app:showAsAction="never" />
+
+
+</menu>

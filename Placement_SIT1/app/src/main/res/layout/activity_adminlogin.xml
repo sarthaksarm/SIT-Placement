@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context=".adminlogin"
+>
+    <com.flaviofaria.kenburnsview.KenBurnsView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/back" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:background="#9E000000"
+    android:layout_height="match_parent"
+    android:layout_margin="30dp"
+    android:padding="30dp"
+   >
+
+    <TextView
+        android:id="@+id/admintxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Admin LOGIN"
+        android:textColor="#fff"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="105dp"
+        android:ems="10"
+        android:textSize="20dp"
+        android:textColorHint="@color/lightwhite"
+        android:background="@drawable/designeditsadmin"
+        android:hint=" E-mail address"
+        android:inputType="textPersonName"
+        android:textColor="#fff" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:background="@drawable/designeditsadmin"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/etName"
+        android:ems="10"
+        android:textColorHint="@color/lightwhite"
+        android:textSize="20dp"
+        android:hint=" Password"
+        android:inputType="textPassword"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/adminloginbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/designbtnshome"
+        android:text="Login"
+        android:layout_below="@+id/etPassword"
+        android:layout_marginTop="40dp"
+        android:textSize="22dp"
+        android:textColor="#fff"
+        tools:layout_editor_absoluteX="105dp"
+        tools:layout_editor_absoluteY="336dp" />
+
+
+</RelativeLayout>
+</ScrollView>
+</RelativeLayout>
